@@ -32,7 +32,7 @@
                         <li class="list-group-item border-warning fw-semibold">Titolo originale : <span class="fst-italic fw-normal">{{$movie['original_title']}}</span></li>
                         <li class="list-group-item border-warning fw-semibold">Prodotto in : <span class="fw-normal text-capitalize">{{$movie['nationality']}}</span></li>
                         <li class="list-group-item border-warning fw-semibold">Data uscita : <span class="fw-normal">{{$movie['date']}}</span></li>
-                        <li class="list-group-item border-warning fw-semibold">Voto : <span class="fw-normal {{$movie['vote'] > 8.6 ? 'text-secondary-emphasis':'text-danger-emphasis'}}">{{$movie['vote']}}</span></li>
+                        <li class="list-group-item border-warning fw-semibold">Voto : <span class="{{$movie['vote'] > 8.6 ? 'text-primary':'text-danger'}}">{{$movie['vote']}}</span></li>
                     </ul>
                 </div>
             </div>
